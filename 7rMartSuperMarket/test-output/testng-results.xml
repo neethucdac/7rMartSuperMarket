@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-14T11:28:06 IST" name="Suite" finished-at="2024-11-14T11:28:14 IST" duration-ms="7444">
+  <suite started-at="2024-11-18T14:17:48 IST" name="Suite" finished-at="2024-11-18T14:18:16 IST" duration-ms="28463">
     <groups>
     </groups>
-    <test started-at="2024-11-14T11:28:06 IST" name="Test" finished-at="2024-11-14T11:28:14 IST" duration-ms="7444">
-      <class name="testScript.LoginTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testScript.LoginTest@6f10d5b6]" started-at="2024-11-14T11:28:06 IST" name="initializeBrowser" finished-at="2024-11-14T11:28:11 IST" duration-ms="4767" status="PASS">
+    <test started-at="2024-11-18T14:17:48 IST" name="Test" finished-at="2024-11-18T14:18:16 IST" duration-ms="28463">
+      <class name="testScript.AdminUserTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testScript.AdminUserTest@6f10d5b6]" started-at="2024-11-18T14:17:48 IST" name="initializeBrowser" finished-at="2024-11-18T14:18:11 IST" duration-ms="23556" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,22 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="verifyUserIsAbletoLoginValidCredentials()[pri:0, instance:testScript.LoginTest@6f10d5b6]" started-at="2024-11-14T11:28:11 IST" name="verifyUserIsAbletoLoginValidCredentials" finished-at="2024-11-14T11:28:13 IST" duration-ms="2354" status="PASS">
+        <test-method signature="verifyUserIsAbleToClickAdminUsers()[pri:0, instance:testScript.AdminUserTest@6f10d5b6]" started-at="2024-11-18T14:18:11 IST" name="verifyUserIsAbleToClickAdminUsers" finished-at="2024-11-18T14:18:16 IST" duration-ms="4848" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserIsAbletoLoginValidCredentials -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScript.LoginTest@6f10d5b6]" started-at="2024-11-14T11:28:13 IST" name="browserQuit" finished-at="2024-11-14T11:28:14 IST" duration-ms="284" status="PASS">
+        </test-method> <!-- verifyUserIsAbleToClickAdminUsers -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testScript.AdminUserTest@6f10d5b6]" started-at="2024-11-18T14:18:16 IST" name="browserQuit" finished-at="2024-11-18T14:18:16 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserIsAbletoLoginValidCredentials status=SUCCESS method=LoginTest.verifyUserIsAbletoLoginValidCredentials()[pri:0, instance:testScript.LoginTest@6f10d5b6] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserIsAbleToClickAdminUsers status=SUCCESS method=AdminUserTest.verifyUserIsAbleToClickAdminUsers()[pri:0, instance:testScript.AdminUserTest@6f10d5b6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- testScript.LoginTest -->
+      </class> <!-- testScript.AdminUserTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

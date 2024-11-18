@@ -24,7 +24,8 @@ public class LoginTest extends Base {
 	 	  
 	  } 
 	   @Test(dataProvider ="credentials" ) */
-	@Test
+	//@Test
+	@Test(groups= {"smoke"})
 	   public void verifyUserIsAbletoLoginValidCredentials(/*String username , String password*/  ) throws IOException { 
 	 	   
 	 	 String username= ExcelUtility.readStringData(1, 0, "loginpage"); //sheetname-loginpage

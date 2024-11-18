@@ -59,7 +59,7 @@ public void browserQuit(ITestResult iTestResult) throws IOException {
 			scrshot.getScreenShot(driver, iTestResult.getName()); 
 		} 
 
-		driver.quit(); 
+		//driver.quit(); 
 	}
 
 	//no need for main method

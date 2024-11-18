@@ -18,11 +18,15 @@ public class ExcelUtility {
   
  	public static String readStringData(int row, int col, String sheet) throws IOException { 
  		String filepath = Constant.TESTDATAFILE; 
+ 		System.out.println("username");
  		f = new FileInputStream(filepath);// obtaining input bytes from a file 
  		w = new XSSFWorkbook(f);// creating workbook instance that refers to the xlsx file 
  		sh = w.getSheet(sheet);// Retrieves the specified sheet named "Sheet1" 
  		XSSFRow r = sh.getRow(row);// retrieves specified row 
+ 		System.out.println(r);
+
  		XSSFCell c = r.getCell(col);// retrieves specified column 
+ 		System.out.println(c.getStringCellValue());
  		return c.getStringCellValue();// retrieves cell string value 
  	} 
   

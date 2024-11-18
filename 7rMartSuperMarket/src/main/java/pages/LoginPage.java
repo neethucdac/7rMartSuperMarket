@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.WaitUtility;
+
 public class LoginPage {
 	WebDriver driver; 
 	 
@@ -21,20 +23,29 @@ public class LoginPage {
  	@FindBy(xpath ="//p[text()='Dashboard']") WebElement dashboard; 
  	@FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']") WebElement errormessagedisplayed; 
  	 
- 	public void enterUserNamefield(String usernamefield) 
+ 	//public void enterUserNamefield(String usernamefield) 
+ 	public LoginPage enterUserNamefield(String usernamefield) //(chaining of page)
+
  	{ 
- 		username.sendKeys(usernamefield); 
+ 		username.sendKeys(usernamefield);
+		return this; 
  	 
  	} 
  	 
- 	public void enterPasswordfield(String passwordfield) 
+ 	//public void enterPasswordfield(String passwordfield) 
+ 	public LoginPage enterPasswordfield(String passwordfield) //(chaining of page)
+
  	{ 
- 		password.sendKeys(passwordfield); 
+ 		password.sendKeys(passwordfield);
+ 		return this;
  	} 
  	 
- 	public void clickOnsigninbutton() { 
- 		 
+ 	//public void clickOnsigninbutton() { 
+ 		public HomePage clickOnsigninbutton() {//last method has to be given chaining
+ 		 WaitUtility waitutility=new WaitUtility();
+ 		 waitutility.waitForClickingElement(driver, signIn);//to wait for sign in waiting 
  		signIn.click(); 
+ 		return new HomePage(driver);//rerturns to the homepage
  	} 
  	 
  	public boolean isdashboarddisplayed() { 
