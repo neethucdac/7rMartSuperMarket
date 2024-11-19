@@ -35,7 +35,8 @@ public void verifyUserIsAbleToLogout() throws IOException
  	//homepage.logoutclick();
 
  	//homepage.testClick();
- 	homepage.AdminUsersClick();
+ 	//homepage.AdminUsersClick();
+ 	homepage.ManageCategoryClick();
  	 Assert.assertEquals(driver.getTitle(), "Login | 7rmart supermarket", "Logout Failed !");
 
  	

@@ -20,6 +20,7 @@ public class HomePage {
  		@FindBy(xpath ="//a[@href='https://groceryapp.uniqassosiates.com/admin/logout']") WebElement logout;
  		@FindBy(xpath="//i[@class='nav-icon fas fa-users']") WebElement adminuserrs;
  		@FindBy(xpath="//a[@href=\"https://groceryapp.uniqassosiates.com/admin/list-admin\"]") WebElement manageusers;
+ 		@FindBy(xpath="//p[text()='Manage Category']")WebElement managecategory;
  		//@FindBy(xpath="//body[@class='sidebar-mini layout-fixed sidebar-collapse']") WebElement collapse;
  		//@FindBy(xpath = "//body[@class='sidebar-mini layout-fixed sidebar-collapse']") WebElement test;
  		public void adminClick()
@@ -42,6 +43,14 @@ public class HomePage {
  			manageusers.click();
  			System.out.println("adminuserclick");
  			return new AdminUser(driver);
+ 		}
+ 		public ManageCategory ManageCategoryClick()
+ 		{
+ 			System.out.println("manageclick");
+ 			managecategory.click();
+ 			System.out.println("manageclick");
+
+ 			return new ManageCategory(driver);
  		}
  		/**public HomePage testClick()
  		{

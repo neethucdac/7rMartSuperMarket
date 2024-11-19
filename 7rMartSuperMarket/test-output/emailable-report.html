@@ -9,10 +9,24 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">28,463</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">24,959</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testScript.AdminUserTest</td><td><a href="#m0">verifyUserIsAbleToClickAdminUsers</a></td><td rowspan="1">1731919691871</td><td rowspan="1">4848</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testScript.ManageCategoryTest</td><td><a href="#m0">browserQuit</a></td><td rowspan="1">1731931642980</td><td rowspan="1">217</td></tr><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testScript.ManageCategoryTest</td><td><a href="#m1">checkNewCategoryAdded</a></td><td rowspan="1">1731931641177</td><td rowspan="1">1790</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">testScript.AdminUserTest#verifyUserIsAbleToClickAdminUsers</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">testScript.ManageCategoryTest#browserQuit</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=checkNewCategoryAdded status=FAILURE method=ManageCategoryTest.checkNewCategoryAdded()[pri:0, instance:testScript.ManageCategoryTest@6f10d5b6] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\user\git\7rMartSuperMarket\7rMartSuperMarket\outputScreenShot\checkNewCategoryAdded18_11_2024_05_37_23.png (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:230)
+	at java.base/java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:179)
+	at org.openqa.selenium.io.FileHandler.copyFile(FileHandler.java:131)
+	at org.openqa.selenium.io.FileHandler.copy(FileHandler.java:110)
+	at utilities.ScreenShortUtilities.getScreenShot(ScreenShortUtilities.java:30)
+	at testScript.Base.browserQuit(Base.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testScript.ManageCategoryTest#checkNewCategoryAdded</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;pages.ManageCategory.clickNewButton()&quot; because &quot;this.managecategory&quot; is null
+	at testScript.ManageCategoryTest.checkNewCategoryAdded(ManageCategoryTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
