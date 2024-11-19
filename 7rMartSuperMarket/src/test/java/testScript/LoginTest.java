@@ -28,9 +28,9 @@ public class LoginTest extends Base {
 	@Test(groups= {"smoke"})
 	   public void verifyUserIsAbletoLoginValidCredentials(/*String username , String password*/  ) throws IOException { 
 	 	   
-	 	 String username= ExcelUtility.readStringData(1, 0, "loginpage"); //sheetname-loginpage
+	 	 String username= ExcelUtility.readStringData(1, 1, "loginpage"); //sheetname-loginpage
 	 	 System.out.println(username);
-	 	 String password = ExcelUtility.readStringData(1, 1,"loginpage"); 
+	 	 String password = ExcelUtility.readStringData(1, 2,"loginpage"); 
 	 	 System.out.println(password);
 	 	LoginPage loginpage = new LoginPage(driver); 
 	 	loginpage.enterUserNamefield(username); 

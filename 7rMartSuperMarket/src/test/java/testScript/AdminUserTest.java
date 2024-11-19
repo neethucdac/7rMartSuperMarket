@@ -26,9 +26,9 @@ public class AdminUserTest extends Base {
 		//HomePage homepage = new HomePage(driver); 
 		adminuser=homepage.AdminUsersClick();
 		adminuser.newClick();
-		String newusername= ExcelUtility.readStringData(1, 0, "adduser"); //sheetname-adduser
+		String newusername= ExcelUtility.readStringData(5, 0, "adduser"); //sheetname-adduser
 	 	 System.out.println(newusername);
-	 	 String newpassword = ExcelUtility.readIntegerData(1, 1,"adduser"); 
+	 	 String newpassword = ExcelUtility.readIntegerData(5, 1,"adduser"); 
 	 	 System.out.println(newpassword);
 		adminuser.addUsername(newusername);
 		adminuser.addPassword(newpassword);
